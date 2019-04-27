@@ -1,3 +1,3 @@
 # rename-and-copy-files
 
-[![LoopBack](https://github.com/strongloop/loopback-next/raw/master/docs/site/imgs/branding/Powered-by-LoopBack-Badge-(blue)-@2x.png)](http://loopback.io/)
+Renames and copies files into destination

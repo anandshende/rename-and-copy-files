@@ -3,7 +3,7 @@
 /**
  * Module dependencies.
  */
-
+require('../lib/config/config');
 var app = require('../app');
 var debug = require('debug')('rename-and-copy-files:server');
 var http = require('http');

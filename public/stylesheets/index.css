@@ -27,10 +27,17 @@ body {
 
 .image-viewer {
   flex: 1;
+  display: flex;
 }
 
 .renaming-form {
   height: 200px;
+  display: flex;
+  font-size: 20px;
+}
+
+.renaming-form input {
+  font-size: 20px;
 }
 
 .arrow {
@@ -43,4 +50,44 @@ body {
 }
 
 .right-arrow {
+}
+
+.text-input-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button-container {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-name-input {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.rename-button {
+  font-size: 20px;
+  outline: none;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.rename-button:active,
+.rename-button:hover {
+  background: #d2d2d2;
+}
+
+img {
+    width: 100%;
+    height: 100%;
 }

@@ -12,20 +12,37 @@
 <body>
     <div class="main-container">
         <div class="left-panel">
-            <div class="arrow left-arrow">
+            <div class="arrow left-arrow" onclick="getPrevImage()">
                 <img src="./images/right.svg" alt="" srcset="">
             </div>
         </div>
         <div class="middle-panel">
-            <div class="image-viewer"></div>
-            <div class="renaming-form"></div>
+            <div class="image-viewer">
+                <img src="" alt="" srcset="" id="imageView">
+            </div>
+            <div class="renaming-form">
+                <div class="text-input-container">
+                    <div class="old-file-name">
+                        <span>Current Name: </span> <input class="file-name-input" id="oldFileName" type="text">
+                    </div>
+                    <div class="new-file-name">
+                        <span>Rename To: </span> <input class="file-name-input" id="newFileName" type="text">
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="rename-button" onclick="renameFile()">Rename File</button>
+                </div>
+            </div>
         </div>
         <div class="right-panel">
-            <div class="arrow right-arrow">
+            <div class="arrow right-arrow" onclick="getNextImage()">
                 <img src="./images/right.svg" alt="" srcset="">
             </div>
         </div>
     </div>
+    <script src="./javascripts/render.js"></script>
+    <script src="./javascripts/file-util.js"></script>
+    <script src="./javascripts/index.js"></script>
 </body>
 
 </html>
